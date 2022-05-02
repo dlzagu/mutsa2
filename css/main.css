@@ -7,6 +7,7 @@ div {
 .red{
     width: 50%;
     font-size: 20px;
+    color :red;
     background-color: red;
 }
 span{
