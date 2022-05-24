@@ -9,6 +9,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+
  
 }
 
@@ -69,4 +70,7 @@ main section ul{
 
 .under-line{
   text-decoration: underline 2px;
+}
+.left{
+  display: flex;
 }
