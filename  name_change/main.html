@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Introduce myself</h1>
+    <div class ="main_box" id ="main_box">
+        <div class="name" id="name"> </div>
+        <button class ="submit_name" onclick = "submit_name()">이름 입력하기</button>
+        <button class ="change_name" onclick="change_name()">이름 변경하기</button>
+        <button class ="delete_name" onclick="delete_name()">이름 삭제하기</button>
+    </div>
+    
+
+    <script>
+        function submit_name(){
+            const input_name = prompt("이름을 입력하세요.");
+            const nameBox = document.getElementById("name");
+            nameBox.innerText = "이름 : " + input_name;
+            
+        }
+        function change_name(){
+            const nameBox = document.getElementById("name");
+            if(nameBox.innerText==""){
+                alert("등록된 이름이 없습니다.")
+            }else{
+                const change_name = prompt("변경할 이름일 입력하세요.");
+                alert(`이름이 ${change_name}(으)로 변경되었습니다.`);
+                nameBox.innerText = "이름 : " + change_name;
+            }   
+        }
+        function delete_name(){
+            const nameBox = document.getElementById("name");
+            if(nameBox.innerText==""){
+                alert("등록된 이름이 없습니다.");
+            }else{
+                
+                alert(`삭제되었습니다`);
+                nameBox.innerText = "";
+            }   
+        }
+
+        
+    </script>
+</body>
+
+</html>

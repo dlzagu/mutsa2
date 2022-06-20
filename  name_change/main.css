@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    
+}
+.main_box{
+    text-align: center;
+}
+.name{
+    padding:10px;
+    margin-bottom:20px;
+    text-align: center;
+    font-size: 20px;
+}
+.submit_name{
+    display: inline-block;
+    font-weight: bolder;
+    background-color:aquamarine;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.change_name{
+    display: inline-block;
+    font-weight: bolder;
+    background-color:khaki;
+    padding:10px;
+    border-radius: 10px;
+}
+
+
+.delete_name{
+    display: inline-block;
+    font-weight: bolder;
+    background-color:skyblue;
+    padding:10px;
+    border-radius: 10px;
+}
